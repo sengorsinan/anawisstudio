@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anawis Studio</title>
+  <meta name="description" content="Anawis Studio builds thoughtful mobile apps." />
+  <style>
+    :root {
+      --bg: #f6f7fb;
+      --card: rgba(255, 255, 255, 0.72);
+      --text: #13151a;
+      --muted: #667085;
+      --line: rgba(19, 21, 26, 0.08);
+      --accent: #1d6ef2;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at top left, rgba(29, 110, 242, 0.10), transparent 35%),
+        radial-gradient(circle at bottom right, rgba(16, 185, 129, 0.08), transparent 30%),
+        linear-gradient(180deg, #f8f9fc 0%, #f3f5fa 100%);
+      color: var(--text);
+      font: 16px/1.65 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+    }
+
+    .wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 72px 20px 80px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(29, 110, 242, 0.08);
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(42px, 8vw, 76px);
+      line-height: 0.98;
+      letter-spacing: -0.05em;
+    }
+
+    .lead {
+      max-width: 720px;
+      margin: 20px 0 0;
+      font-size: clamp(18px, 2.2vw, 22px);
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      gap: 18px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      margin-top: 42px;
+    }
+
+    .card {
+      padding: 24px;
+      border-radius: 24px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      box-shadow: 0 10px 30px rgba(19, 21, 26, 0.05);
+    }
+
+    .card h2 {
+      margin: 0 0 8px;
+      font-size: 20px;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 32px;
+    }
+
+    a.button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0 18px;
+      border-radius: 999px;
+      background: #111827;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a.secondary {
+      background: rgba(17, 24, 39, 0.06);
+      color: #111827;
+    }
+
+    footer {
+      margin-top: 48px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="eyebrow">Anawis Studio</div>
+    <h1>Thoughtful mobile apps, built with care.</h1>
+    <p class="lead">
+      We create clean, practical, and well-crafted apps designed for everyday use.
+    </p>
+
+    <div class="links">
+      <a class="button" href="/privacy">Privacy Policy</a>
+      <a class="button secondary" href="mailto:support@anawisstudio.com">Contact</a>
+    </div>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Focused products</h2>
+        <p>
+          We build utility-first mobile experiences that stay simple, clear, and dependable.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>Privacy-minded</h2>
+        <p>
+          We aim to keep data handling minimal and transparent, with on-device workflows whenever possible.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>Built for the long run</h2>
+        <p>
+          Anawis Studio is a growing app publisher focused on thoughtful software and strong foundations.
+        </p>
+      </article>
+    </section>
+
+    <footer>
+      © 2026 Anawis Studio
+    </footer>
+  </main>
+</body>
+</html>
